@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Máximo JM Hidalgo - Desarrollador Backend & Arquitectura">
+    <title>Máximo Hidalgo | Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-blob blob-red"></div>
+    <div class="bg-blob blob-dark"></div>
+    <div class="bg-blob blob-red-small"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">&gt;_ max.dev</div>
+            <ul class="nav-links">
+                <li><a href="#about"><span class="lang-es">Sobre mí</span><span class="lang-en">About</span></a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects"><span class="lang-es">Proyectos</span><span class="lang-en">Projects</span></a></li>
+                <li><a href="#contact" class="btn-primary"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+                <li><button id="lang-toggle" class="btn-secondary" style="padding: 0.3rem 0.8rem; cursor: pointer; border-radius: 5px;">EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content fade-in">
+            <h1 class="glitch-text" data-text="Máximo Hidalgo">Máximo Hidalgo</h1>
+            <h2 class="typing-text">
+                <span class="lang-es">Desarrollador <span class="highlight">Backend</span> & Sistemas</span>
+                <span class="lang-en">Systems & <span class="highlight">Backend</span> Developer</span>
+            </h2>
+            <p class="hero-desc lang-es">
+                Si hay un muro, lo hacemos pedazos, y si no hay ningún camino, ¡lo abrimos con nuestras propias manos! <br>
+                Construyendo sistemas distribuidos, robustos y eficientes.
+            </p>
+            <p class="hero-desc lang-en">
+                If there's a wall, we smash it, and if there's no path, we carve it with our own hands! <br>
+                Building distributed, robust, and efficient systems.
+            </p>
+            <div class="hero-actions">
+                <a href="#about" class="btn-primary glow-effect"><span class="lang-es">Conoceme</span><span class="lang-en">Know Me</span></a>
+                <a href="https://github.com/MaximoHidalgo" target="_blank" class="btn-secondary">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Mí Section -->
+    <section id="about" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title"><span class="lang-es">Sobre <span class="highlight">Mí</span></span><span class="lang-en">About <span class="highlight">Me</span></span></h2>
+            <div class="about-grid">
+                <div class="glass-card about-text">
+                    <p class="lang-es">
+                        ¡Hola! Soy programador, desarrollador y estudiante de <b>Ingeniería en Sistemas</b> en la Universidad Tecnológica Nacional de Buenos Aires (UTN - FRBA).
+                    </p>
+                    <p class="lang-en">
+                        Hi! I am a programmer, developer, and <b>Information Systems Engineering</b> student at the National Technological University of Buenos Aires (UTN - FRBA).
+                    </p>
+                    <br>
+                    <p class="lang-es">
+                        Actualmente me dedico a construir proyectos robustos, bien documentados y eficientes, con un fuerte enfoque en el <b>backend y la arquitectura hexagonal</b>. Desde el desarrollo de sistemas operativos en <b>C/C++</b>, hasta el despliegue de soluciones completas utilizando <b>Java, Docker</b>, bases de datos y colas de mensajería como <b>RabbitMQ</b>.
+                    </p>
+                    <p class="lang-en">
+                        I currently focus on building robust, well-documented, and efficient projects, with a strong emphasis on <b>backend and hexagonal architecture</b>. From developing operating systems in <b>C/C++</b>, to deploying complete solutions using <b>Java, Docker</b>, databases, and message brokers like <b>RabbitMQ</b>.
+                    </p>
+                    <br>
+                    <p class="lang-es">
+                        Disfruto desarrollando mis ideas a través de las herramientas que me da el código para expresarme.
+                    </p>
+                    <p class="lang-en">
+                        I enjoy bringing my ideas to life through the tools that code provides to express myself.
+                    </p>
+                </div>
+                <div class="glass-card about-stats">
+                    <div class="stat-item">
+                        <h3>🎓 UTN-FRBA</h3>
+                        <p class="lang-es">Ingeniería en Sistemas de Información</p>
+                        <p class="lang-en">Information Systems Engineering</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>📜 Udemy</h3>
+                        <p class="lang-es">Desarrollo Web Completo (HTML5, CSS3, JS, PHP)</p>
+                        <p class="lang-en">Full Stack Web Development (HTML5, CSS3, JS, PHP)</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="lang-es">💼 Misión actual</h3>
+                        <h3 class="lang-en">💼 Current Mission</h3>
+                        <p class="lang-es">Buscando desafíos técnicos para seguir escalando.</p>
+                        <p class="lang-en">Looking for technical challenges to keep scaling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title"><span class="lang-es">Mis <span class="highlight">Herramientas</span></span><span class="lang-en">My <span class="highlight">Tools</span></span></h2>
+            <div class="skills-grid">
+                
+                <div class="glass-card skill-card">
+                    <h3 class="lang-es">💻 Lenguajes Core</h3>
+                    <h3 class="lang-en">💻 Core Languages</h3>
+                    <img src="https://skillicons.dev/icons?i=c,cpp,java,haskell&perline=4" alt="Lenguajes">
+                    <div class="badges">
+                        <img src="https://img.shields.io/badge/Prolog-2d2d2d?style=for-the-badge&logo=prolog&logoColor=e03131" />
+                        <img src="https://img.shields.io/badge/Wollok-2d2d2d?style=for-the-badge&logo=wollok&logoColor=e03131" />
+                    </div>
+                </div>
+
+                <div class="glass-card skill-card">
+                    <h3>🐳 Infra & BD</h3>
+                    <img src="https://skillicons.dev/icons?i=ubuntu,linux,docker,postgres,supabase,rabbitmq&perline=3" alt="Infraestructura">
+                    <div class="badges">
+                        <img src="https://img.shields.io/badge/n8n-2d2d2d?style=for-the-badge&logo=n8n&logoColor=e03131" />
+                    </div>
+                </div>
+
+                <div class="glass-card skill-card">
+                    <h3 class="lang-es">🧰 Web & Tools</h3>
+                    <h3 class="lang-en">🧰 Web & Tools</h3>
+                    <img src="https://skillicons.dev/icons?i=js,html,css,git,github,vscode&perline=3" alt="Herramientas Web">
+                    <div class="badges">
+                        <img src="https://img.shields.io/badge/DBeaver-2d2d2d?style=for-the-badge&logo=dbeaver&logoColor=e03131" />
+                        <img src="https://img.shields.io/badge/UML-2d2d2d?style=for-the-badge&logo=uml&logoColor=e03131" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title"><span class="lang-es">Proyectos <span class="highlight">Destacados</span></span><span class="lang-en">Featured <span class="highlight">Projects</span></span></h2>
+            <div class="projects-grid">
+                
+                <div class="glass-card project-card">
+                    <div class="project-img">
+                        <img src="assets/os_simulator.jpg" alt="Simulador de SO">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="lang-es">Simulador de Kernel (C/C++)</h3>
+                        <h3 class="lang-en">Kernel Simulator (C/C++)</h3>
+                        <p class="lang-es">Simulación completa de un sistema operativo. Incluye planificación de procesos (CPU Scheduling), sincronización mediante semáforos, gestión de memoria y comunicación entre procesos.</p>
+                        <p class="lang-en">Full simulation of an operating system. Includes CPU Scheduling, semaphore-based synchronization, memory management, and inter-process communication (IPC).</p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>C</span>
+                            <span>Linux API</span>
+                            <span>Threads</span>
+                        </div>
+                        <a href="https://github.com/MaximoHidalgo" target="_blank" class="btn-secondary"><span class="lang-es">Ver Código</span><span class="lang-en">View Code</span></a>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="project-img">
+                        <img src="assets/message_broker.jpg" alt="Arquitectura Distribuida">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="lang-es">Arquitectura Distribuida (RabbitMQ)</h3>
+                        <h3 class="lang-en">Distributed Architecture (RabbitMQ)</h3>
+                        <p class="lang-es">Sistema backend altamente escalable basado en microservicios y comunicación asíncrona a través de colas de mensajes (Message Broker). Containerizado y listo para producción.</p>
+                        <p class="lang-en">Highly scalable backend system based on microservices and asynchronous communication via message queues (Message Broker). Containerized and production-ready.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>RabbitMQ</span>
+                            <span>Docker</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="https://github.com/MaximoHidalgo" target="_blank" class="btn-secondary"><span class="lang-es">Ver Código</span><span class="lang-en">View Code</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title text-center"><span class="lang-es">¿Listo para <span class="highlight">Conectar?</span></span><span class="lang-en">Ready to <span class="highlight">Connect?</span></span></h2>
+            <p class="hero-desc lang-es text-center" style="max-width: 600px; margin: 0 auto 3rem auto;">
+                Actualmente me encuentro abierto a nuevas oportunidades y proyectos desafiantes. Ya sea para una oferta laboral, dudas sobre arquitectura, o simplemente para charlar sobre sistemas, mi bandeja de entrada está siempre abierta.
+            </p>
+            <p class="hero-desc lang-en text-center" style="max-width: 600px; margin: 0 auto 3rem auto;">
+                I am currently open to new opportunities and challenging projects. Whether it's a job offer, questions about architecture, or just chatting about systems, my inbox is always open.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-links" style="flex-direction: column; align-items: stretch; gap: 1.5rem;">
+                        <a href="mailto:maximojmhidalgo@gmail.com" class="btn-primary glow-effect" style="text-align: center;"><span class="lang-es">✉️ Enviar Email Directo</span><span class="lang-en">✉️ Send Direct Email</span></a>
+                        <a href="https://www.linkedin.com/in/maximohidalgo/" target="_blank" class="btn-secondary" style="text-align: center;">🔗 LinkedIn</a>
+                        <a href="https://github.com/MaximoHidalgo" target="_blank" class="btn-secondary" style="text-align: center;">🐙 GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="glass-card contact-form-card">
+                    <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('¡Pronto lo conectaremos a tu email!');">
+                        <div class="form-group">
+                            <label for="name" class="lang-es">Nombre</label>
+                            <label for="name" class="lang-en">Name</label>
+                            <input type="text" id="name" required class="glass-input" placeholder="Tu nombre / Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required class="glass-input" placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="lang-es">Mensaje</label>
+                            <label for="message" class="lang-en">Message</label>
+                            <textarea id="message" rows="4" required class="glass-input" placeholder="¡Hola Máximo!..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary glow-effect" style="border:none; cursor:pointer; font-size: 1.1rem; padding: 0.8rem;">
+                            <span class="lang-es">Enviar Mensaje</span><span class="lang-en">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--glass-border); margin-top: 4rem;">
+        <p>&copy; 2026 Máximo JM Hidalgo. <span class="lang-es">Todos los derechos reservados.</span><span class="lang-en">All rights reserved.</span></p>
+        <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.7;"><span class="lang-es">Diseñado con pasión y código.</span><span class="lang-en">Designed with passion and code.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

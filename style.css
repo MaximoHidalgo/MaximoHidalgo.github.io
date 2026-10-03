@@ -1,0 +1,440 @@
+:root {
+    --bg-color: #0b0f19;
+    --text-main: #f8f9fa;
+    --text-muted: #8b949e;
+    --accent-red: #e03131;
+    --accent-red-glow: rgba(224, 49, 49, 0.4);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    
+    --font-main: 'Outfit', sans-serif;
+    --font-code: 'Fira Code', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Background Blobs for Neon/Glassmorphism effect */
+.bg-blob {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1;
+    animation: float 10s infinite alternate ease-in-out;
+}
+.blob-red {
+    top: -10%;
+    right: -5%;
+    width: 400px;
+    height: 400px;
+    background: var(--accent-red-glow);
+}
+.blob-dark {
+    bottom: -10%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(30, 10, 20, 0.5);
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-30px, 50px); }
+}
+
+/* Navigation - Glassmorphism */
+.glass-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: var(--font-code);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+.logo span {
+    color: var(--accent-red);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-main);
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--accent-red);
+    color: #fff !important;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--accent-red);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background: transparent;
+    box-shadow: 0 0 15px var(--accent-red-glow);
+}
+
+.btn-secondary {
+    background: var(--glass-bg);
+    color: var(--text-main);
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.glitch-text {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    position: relative;
+    color: var(--text-main);
+}
+
+.typing-text {
+    font-size: 2rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+.highlight {
+    color: var(--accent-red);
+    font-weight: 600;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Fade In Animation */
+.fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Sections Common */
+.section {
+    padding: 6rem 2rem;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* Glass Cards */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-color: rgba(224, 49, 49, 0.3);
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+.about-text b {
+    color: var(--text-main);
+}
+
+.about-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.stat-item h3 {
+    color: var(--text-main);
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+.stat-item p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-card h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+.skill-card img {
+    margin-bottom: 1rem;
+}
+
+.badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Extra decorative blob */
+.blob-red-small {
+    top: 50%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(224, 49, 49, 0.2);
+    animation-delay: -5s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+}
+
+.project-card {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.project-content p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech span {
+    background: rgba(224, 49, 49, 0.1);
+    color: var(--accent-red);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(224, 49, 49, 0.3);
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Contact Section & Utilities */
+.text-center {
+    text-align: center;
+}
+.contact-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Language Toggle Logic */
+body:not(.en) .lang-en { display: none !important; }
+body.en .lang-es { display: none !important; }
+/* Contact Form Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-group label {
+    font-weight: 600;
+    color: var(--text-main);
+}
+.glass-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: var(--text-main);
+    font-family: var(--font-main);
+    transition: all 0.3s ease;
+}
+.glass-input:focus {
+    outline: none;
+    border-color: var(--accent-red);
+    box-shadow: 0 0 10px rgba(224, 49, 49, 0.2);
+}
+.glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
