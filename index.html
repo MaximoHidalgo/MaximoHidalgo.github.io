@@ -146,41 +146,95 @@
             <h2 class="section-title"><span class="lang-es">Proyectos <span class="highlight">Destacados</span></span><span class="lang-en">Featured <span class="highlight">Projects</span></span></h2>
             <div class="projects-grid">
                 
+                <!-- DonaTrack -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="assets/os_simulator.jpg" alt="Simulador de SO">
+                        <img src="assets/message_broker.jpg" alt="DonaTrack - Arquitectura Distribuida">
                     </div>
                     <div class="project-content">
-                        <h3 class="lang-es">Simulador de Kernel (C/C++)</h3>
-                        <h3 class="lang-en">Kernel Simulator (C/C++)</h3>
-                        <p class="lang-es">Simulación completa de un sistema operativo. Incluye planificación de procesos (CPU Scheduling), sincronización mediante semáforos, gestión de memoria y comunicación entre procesos.</p>
-                        <p class="lang-en">Full simulation of an operating system. Includes CPU Scheduling, semaphore-based synchronization, memory management, and inter-process communication (IPC).</p>
+                        <h3 class="lang-es">DonaTrack — Arquitectura Distribuida</h3>
+                        <h3 class="lang-en">DonaTrack — Distributed Architecture</h3>
+                        <p class="lang-es">Plataforma distribuida de gestión y trazabilidad de donaciones para UTN Solidaria. Diseñada bajo Arquitectura Hexagonal y DDD, microservicios desacoplados con eventos asíncronos en RabbitMQ, persistencia en PostgreSQL y contenedores Docker.</p>
+                        <p class="lang-en">Distributed donation management and traceability platform for UTN Solidaria. Built with Hexagonal Architecture and DDD, decoupled microservices with asynchronous domain events in RabbitMQ, PostgreSQL persistence, and Docker deployment.</p>
                         <div class="project-tech">
-                            <span>C++</span>
-                            <span>C</span>
-                            <span>Linux API</span>
-                            <span>Threads</span>
-                        </div>
-                        <a href="https://github.com/MaximoHidalgo/TP-Cursada-SistemasOperativos-ElUltimoParadigma" target="_blank" class="btn-secondary"><span class="lang-es">Ver Código</span><span class="lang-en">View Code</span></a>
-                    </div>
-                </div>
-
-                <div class="glass-card project-card">
-                    <div class="project-img">
-                        <img src="assets/message_broker.jpg" alt="Arquitectura Distribuida">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="lang-es">Arquitectura Distribuida (RabbitMQ)</h3>
-                        <h3 class="lang-en">Distributed Architecture (RabbitMQ)</h3>
-                        <p class="lang-es">Sistema backend altamente escalable basado en microservicios y comunicación asíncrona a través de colas de mensajes (Message Broker). Containerizado y listo para producción.</p>
-                        <p class="lang-en">Highly scalable backend system based on microservices and asynchronous communication via message queues (Message Broker). Containerized and production-ready.</p>
-                        <div class="project-tech">
-                            <span>Java</span>
+                            <span>Java 21</span>
+                            <span>Spring Boot</span>
                             <span>RabbitMQ</span>
                             <span>Docker</span>
                             <span>PostgreSQL</span>
                         </div>
-                        <a href="https://github.com/MaximoHidalgo/DonaTrack" target="_blank" class="btn-secondary"><span class="lang-es">Ver Código</span><span class="lang-en">View Code</span></a>
+                        <div class="project-actions">
+                            <a href="https://github.com/MaximoHidalgo/DonaTrack" target="_blank" class="btn-secondary"><span class="lang-es">Ver Código</span><span class="lang-en">View Code</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simulador de Kernel -->
+                <div class="glass-card project-card">
+                    <div class="project-img">
+                        <img src="assets/os_simulator.jpg" alt="Simulador de Kernel Unix-like">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="lang-es">Simulador de Kernel & SO (C/C++)</h3>
+                        <h3 class="lang-en">Kernel & OS Simulator (C/C++)</h3>
+                        <p class="lang-es">Simulación distribuida de sistema operativo y kernel multi-proceso sobre red TCP/IP simulando hardware real. Incluye planificador multinivel en 7 estados (FIFO, RR, VRR), sincronización con semáforos POSIX, ciclo de instrucción con CPU, y MMU/TLB con paginación y swap.</p>
+                        <p class="lang-en">Distributed multi-process operating system and kernel simulator over TCP/IP simulating real hardware. Includes a 7-state multilevel scheduler (FIFO, RR, VRR), POSIX semaphore synchronization, CPU instruction cycle, and MMU/TLB with dynamic paging and disk swap.</p>
+                        <div class="project-tech">
+                            <span>C (C99)</span>
+                            <span>C++</span>
+                            <span>Linux API</span>
+                            <span>Pthreads</span>
+                            <span>Sockets TCP</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MaximoHidalgo/TP-Cursada-SistemasOperativos-ElUltimoParadigma" target="_blank" class="btn-secondary"><span class="lang-es">Ver Código</span><span class="lang-en">View Code</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arcade 1942 Remake -->
+                <div class="glass-card project-card">
+                    <div class="project-img">
+                        <img src="assets/proyecto_wollok.jpg" alt="Arcade 1942 Remake">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="lang-es">Arcade 1942 Remake (Motor OOP)</h3>
+                        <h3 class="lang-en">Arcade 1942 Remake (OOP Engine)</h3>
+                        <p class="lang-es">Remake del legendario juego arcade de combate aéreo 1942 en Wollok Game. Implementa un motor con arquitectura modular, Game Loop determinístico, gestión de estados (State Pattern), resolución polimórfica de colisiones con Double Dispatch puro y suite de 42 pruebas unitarias automatizadas.</p>
+                        <p class="lang-en">Remake of the legendary 1942 aerial combat arcade game built in Wollok Game. Features a modular engine, deterministic Game Loop, State Pattern management, pure Double Dispatch polymorphic collision handling, and a 42-unit-test automated test suite.</p>
+                        <div class="project-tech">
+                            <span>Wollok</span>
+                            <span>OOP / Polimorfismo</span>
+                            <span>Double Dispatch</span>
+                            <span>State Pattern</span>
+                            <span>TDD (42 Tests)</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MaximoHidalgo/arcade-1942-wollok" target="_blank" class="btn-secondary"><span class="lang-es">Ver Código</span><span class="lang-en">View Code</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSL Compiladores y Autómatas -->
+                <div class="glass-card project-card">
+                    <div class="project-img">
+                        <img src="assets/Proyecto_ScannerLexico.gif" alt="SSL Compiladores y Autómatas">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="lang-es">SSL — Compiladores & Autómatas (C11)</h3>
+                        <h3 class="lang-en">SSL — Compilers & Automata (C11)</h3>
+                        <p class="lang-es">Ingeniería de software de bajo nivel y teoría de compiladores (UTN-FRBA). Implementación en C de Autómatas Finitos Deterministas (DFA) con matrices de transición, analizador léxico manual y con Flex, parser sintáctico con Bison, gestión manual de memoria y Makefiles idempotentes.</p>
+                        <p class="lang-en">Low-level software engineering and compiler theory (UTN-FRBA). C implementation of Deterministic Finite Automata (DFA) with transition matrices, manual & Flex lexical scanner, Bison syntactic parser, manual memory management, and idempotent Makefiles.</p>
+                        <div class="project-tech">
+                            <span>C (C11)</span>
+                            <span>DFA Automata</span>
+                            <span>Flex</span>
+                            <span>Bison</span>
+                            <span>Makefiles</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MaximoHidalgo/SSL" target="_blank" class="btn-secondary"><span class="lang-es">Ver Código</span><span class="lang-en">View Code</span></a>
+                        </div>
                     </div>
                 </div>
 
